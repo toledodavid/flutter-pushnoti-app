@@ -1,4 +1,4 @@
-package com.example.pushapp
+package com.davidtoledo.pushappflutter
 
 import io.flutter.embedding.android.FlutterActivity
 
