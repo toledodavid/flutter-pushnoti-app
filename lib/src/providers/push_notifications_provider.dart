@@ -39,6 +39,9 @@ class PushNotificationsProvider {
   Future<dynamic> onMessage(Map<String, dynamic> message) async {
     print('======= onMessage =======');
     print('message: $message');
+
+    final argument = message['data']['name'];
+    print('argument: $argument');
   }
 
   Future<dynamic> onLaunch(Map<String, dynamic> message) async {
