@@ -20,6 +20,10 @@ class _MyAppState extends State<MyApp> {
 
     final pushProvider =  new PushNotificationsProvider();
     pushProvider.initNotifications();
+
+    pushProvider.messagesStream.listen((argument) {
+      print('argument from main: $argument');
+    });
   }
 
   @override
